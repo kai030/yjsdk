@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/sel_pic_3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="快速注册"
+            android:textColor="@color/while_txt"
+            android:textSize="@dimen/title_txt_size" />
+
+        <ImageView
+            android:id="@+id/login_go_game"
+            android:visibility="gone"
+            android:layout_width="66dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/bth_4" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:background="@drawable/sel_pic_2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/sel_pic_6">
+
+            <RelativeLayout
+                android:id="@+id/r2"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/sel_pic_4">
+
+                <EditText
+                    android:id="@+id/login_et_account"
+                    style="@style/et_input"
+                    android:hint="请输入用户名" />
+
+                <EditText
+                    android:id="@+id/login_et_pwd"
+                    style="@style/et_input"
+                   android:inputType="textPassword"
+                    android:layout_below="@+id/login_et_account"
+                    android:layout_marginTop="4dp"
+                    android:hint="请输入密码" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/login_et_pwd">
+
+                    <CheckBox
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/register_iv_protocol"
+                        android:layout_marginLeft="19dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/login_auto_checkbox"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我已阅读并同意《用户注册服务协议》"
+                        android:paddingLeft="6dp"
+                        android:textColor="#9c9c9c"
+                        android:textSize="11dp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/register_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:gravity="center"
+                android:textColor="@color/while_txt"
+                android:textSize="16dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/r2"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/bth_3"
+                android:text="接受协议并注册" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/login_three_icon_layout" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

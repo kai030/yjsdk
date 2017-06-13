@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/sel_pic_3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账户登录"
+            android:textColor="@color/while_txt"
+            android:textSize="@dimen/title_txt_size" />
+
+        <ImageView
+            android:id="@+id/login_go_game"
+            android:layout_width="66dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/bth_4" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:background="@drawable/sel_pic_2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/sel_pic_6">
+
+            <RelativeLayout
+                android:id="@+id/r2"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/sel_pic_4">
+
+                <EditText
+                    android:id="@+id/login_et_account"
+                    style="@style/et_input"
+                    android:hint="请输入用户名" />
+
+                <EditText
+                    android:id="@+id/login_et_pwd"
+                    style="@style/et_input"
+                    android:layout_below="@+id/login_et_account"
+                    android:layout_marginTop="4dp"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/login_et_pwd"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/login_iv_auto"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="19dp"
+                        android:background="@drawable/bth_gouxuan_sel" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="6dp"
+                        android:text="自动登录"
+                        android:textColor="#9c9c9c"
+                        android:textSize="11dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/login_tv_register"
+                style="@style/login_btn"
+                android:layout_below="@+id/r2"
+                android:layout_marginLeft="24dp"
+                android:background="@drawable/bth_2"
+                android:text="注册" />
+
+            <TextView
+                android:id="@+id/login_tv_login"
+                style="@style/login_btn"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/r2"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/bth_3"
+                android:text="登录" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/login_three_icon_layout" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

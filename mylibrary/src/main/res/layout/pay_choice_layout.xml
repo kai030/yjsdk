@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/sel_pic_3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择支付方式"
+            android:textColor="@color/while_txt"
+            android:textSize="@dimen/title_txt_size" />
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/bth_fanhui" />
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/view_back"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:background="@drawable/sel_pic_4"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:id="@+id/pay_choice_wx_layout"
+            android:gravity="center"
+            android:orientation="vertical">
+        <ImageView
+            style="@style/pay_choice_iocn"
+            android:id="@+id/pay_choice_icon_wx"
+            android:background="@drawable/pic_wxzf"/>
+            <TextView
+                style="@style/pay_choice_txt"
+                android:text="微信支付"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/pay_choice_alipay_layout"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                style="@style/pay_choice_iocn"
+                android:id="@+id/pay_choice_icon_alipay"
+                android:background="@drawable/pic_zfbzf"/>
+            <TextView
+                style="@style/pay_choice_txt"
+                android:text="支付宝钱包"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:id="@+id/pay_choice_jb_layout"
+            android:layout_marginLeft="20dp"
+            android:visibility="visible"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                style="@style/pay_choice_iocn"
+                android:id="@+id/pay_choice_icon_jb"
+                android:background="@drawable/pic_logo"/>
+            <TextView
+                style="@style/pay_choice_txt"
+                android:text="平台币"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

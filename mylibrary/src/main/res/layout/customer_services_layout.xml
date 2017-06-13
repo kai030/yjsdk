@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/sel_pic_3">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="客服中心"
+            android:textColor="@color/while_txt"
+            android:textSize="@dimen/title_txt_size" />
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/bth_fanhui" />
+
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sel_pic_4"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pic_logo" />
+
+        <TextView
+            android:layout_width="257dp"
+            android:layout_height="52.33dp"
+            android:id="@+id/qq"
+            android:layout_below="@+id/logo"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:paddingLeft="80dp"
+            android:text="QQ: 3652545263"
+            android:gravity="center_vertical"
+            android:background="@drawable/pic_kefu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp" />
+        <!-- 771 157-->
+        <ListView
+            android:id="@+id/float_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:visibility="gone" />
+        <View
+            android:layout_below="@+id/qq"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

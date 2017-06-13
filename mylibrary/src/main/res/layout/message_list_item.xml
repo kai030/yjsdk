@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/message_flag_image"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="13dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/pic_guangdian" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxEms="20"
+        android:id="@+id/message_title"
+        android:layout_marginRight="15dp"
+        android:textSize="14dp"
+        android:textColor="#6b6b77"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/message_flag_image"
+        android:layout_marginLeft="12dp"
+        android:text="最新消息"
+        />
+
+  
+   <ImageView
+       android:layout_width="10dp"
+       android:layout_height="16dp"
+       android:layout_centerVertical="true"
+       android:layout_marginRight="15dp"
+       android:layout_alignParentRight="true"
+       android:background="@drawable/bth_jiantou1"/>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/gift_list_bottom_view"
+        android:layout_alignParentBottom="true"
+        android:background="#bbbbbb" />
+
+
+</RelativeLayout>
+</LinearLayout>

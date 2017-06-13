@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/sel_pic_1"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        style="@style/Float_dialog_text"
+        android:text="用户中心"
+        android:id="@+id/float_user_center_tv"/>
+
+    <TextView
+        android:layout_below="@+id/float_user_center_tv"
+        style="@style/Float_dialog_text"
+        android:text="客服中心"
+        android:id="@+id/float_customer_service_tv"/>
+
+    <TextView
+        android:layout_below="@+id/float_customer_service_tv"
+        style="@style/Float_dialog_text"
+        android:text="礼包中心"
+        android:id="@+id/float_gift_tv"/>
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/float_gift_tv"
+        style="@style/Float_dialog_text"
+        android:text="平台消息"
+        android:id="@+id/float_message_tv"/>
+
+    <ImageView
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="11dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bth_guanbi"
+        android:id="@+id/view_back"/>
+
+</RelativeLayout>

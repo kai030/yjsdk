@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:id="@+id/user_three_login_txt"
+                  android:layout_marginLeft="24dp"
+                  android:text="使用第三方登录"
+                  android:textSize="11dp"
+                  android:textColor="@color/while_txt"/>
+
+        <ImageView android:layout_width="11dp"
+                   android:layout_height="11dp"
+                   android:id="@+id/jt"
+                   android:background="@drawable/pic_jiantou"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="3dp"
+                   android:layout_toRightOf="@+id/user_three_login_txt"
+        />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_toRightOf="@+id/jt"
+                      android:gravity="center">
+
+        <ImageView style="@style/login_three_icon"
+                   android:id="@+id/login_iv_sina_wb"
+                    android:visibility="gone"
+                   android:background="@drawable/pic_wb"
+
+        />
+        <ImageView style="@style/login_three_icon"
+                   android:id="@+id/login_iv_wx"
+                   android:layout_marginLeft="11dp"
+                   android:background="@drawable/pic_wx"
+
+        />
+        <ImageView style="@style/login_three_icon"
+                   android:id="@+id/login_iv_qq"
+                   android:layout_marginLeft="11dp"
+                   android:background="@drawable/pic_qq"
+
+        />
+        </LinearLayout>
+    </RelativeLayout>
+

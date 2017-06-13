@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/gift_image"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/pic_liwu" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:id="@+id/gift_get"
+        android:background="@drawable/bth_6"
+        android:layout_marginRight="15dp"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="领取"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/gift_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/gift_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/gift_image"
+        android:text="dfdjfhdjfhdjfhdjfhdjfhdjfh"
+        android:textColor="#6b6b77"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/gift_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gift_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/gift_image"
+        android:text="dfdjfhdjfhdjfhdjfhdjfhdjfh"
+        android:textColor="#a7a7a7"
+        android:textSize="12dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/gift_list_bottom_view"
+        android:layout_alignParentBottom="true"
+        android:background="#bbbbbb" />
+
+
+</RelativeLayout>
+</LinearLayout>

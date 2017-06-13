@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/title_top"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#3f51B5"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:gravity="center_vertical"
+>
+
+    <ImageView
+        android:id="@+id/icon_back"
+        android:layout_width="15dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/bth_fanhui" />
+    <View
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:id="@+id/btn_left"/>
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/btn_left"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="12dp"-->
+        <!--android:background="#00000000"-->
+        <!--android:contentDescription="@string/app_name"-->
+        <!--android:src="@drawable/bth_fanhui"/>-->
+
+
+    <!--<com.chinabluedon.appstore.person.ui.widget.RoundImageView-->
+        <!--android:id="@+id/imgbtn_left"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="12dp"-->
+        <!--android:background="#00000000"-->
+        <!--android:contentDescription="@string/app_name"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/personpmanager"-->
+        <!--android:visibility="gone"-->
+    <!--/>-->
+
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/layout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="12dp">
+
+        <!--<com.chinabluedon.appstore.common.ui.widget.RippleView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--ripple:rv_centered="true">-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/btn_right1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="#000000"-->
+                <!--android:contentDescription="@string/app_name"-->
+                <!--android:src="@drawable/icon_manager_setting"/>-->
+
+        <!--</com.chinabluedon.appstore.common.ui.widget.RippleView>-->
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@+id/layout_right"
+        android:padding="10dp">
+
+        <!--<com.chinabluedon.appstore.common.ui.widget.RippleView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--ripple:rv_centered="true">-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/btn_search"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/transparent"-->
+                <!--android:contentDescription="@string/app_name"-->
+                <!--android:src="@drawable/icon_search"-->
+                <!--android:visibility="gone"/>-->
+
+        <!--</com.chinabluedon.appstore.common.ui.widget.RippleView>-->
+
+    </FrameLayout>
+</RelativeLayout>
